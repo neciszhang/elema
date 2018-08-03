@@ -7,8 +7,8 @@
 
 <script>
 // @ is an alias to /src
-import Head from '@/components/header/Head.vue';
-import { guessCity, hotCity , groupCity } from '../../service/getData.js';
+// import Head from '@/components/header/Head.vue';
+// import { guessCity, hotCity , groupCity } from '../../service/getData.js';
 
 export default {
   name: 'home',
@@ -22,19 +22,19 @@ export default {
   },
   mounted(){
   	console.log(111);
-  	guessCity().then( res=>{
-  		this.guessCity = res.name;
-  		this.guessCityId = res.id;
-  	});
-  	hotCity().then( res =>{
-  		this.hotCity = res;
-  	});
-  	groupCity().then( res =>{
-  		this.groupCity = res;
-  	});
+  	// guessCity().then( res=>{
+  	// 	this.guessCity = res.name;
+  	// 	this.guessCityId = res.id;
+  	// });
+  	// hotCity().then( res =>{
+  	// 	this.hotCity = res;
+  	// });
+  	// groupCity().then( res =>{
+  	// 	this.groupCity = res;
+  	// });
   },
   components: {
-    Head
+    // Head
   }
 }
 </script>

@@ -20,8 +20,12 @@ export default {
   		groupCity:""
   	}
   },
+  created(){
+  	console.log(222);
+  },
   mounted(){
   	console.log(111);
+  	alert(1);
   	// guessCity().then( res=>{
   	// 	this.guessCity = res.name;
   	// 	this.guessCityId = res.id;
